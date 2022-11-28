@@ -40,11 +40,11 @@
 }
 
 .text__container{
-    // height: 30%;
+    height: 100%;
     h1 {
         padding: 20px 0px;
         font-size: 2rem;
-        text-align: center;
+        // text-align: center;
     }
 }
 
@@ -58,10 +58,6 @@
     padding-right: 50px;
     padding-bottom: 60px;
     padding-left: 50px;
-    font-family: GothamBook, Arial, sans-serif;
-    color: #fff;
-    text-decoration: none;
-    text-transform: none;
     p{
         line-height: 1.4rem;
         font-weight: 400;
@@ -70,11 +66,62 @@
 }
 
 .tareas__container {
-    height: 600px;
     max-width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+}
+
+.escenario{
+    max-height: 300px;
+    max-width: 500px;
+    margin: auto;
+        padding-bottom: 10px;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+}
+
+.tarea__text{
+    display: block;
+        overflow: visible;
+        max-height: 300px;
+        max-width: 500px;
         margin: auto;
-        margin-bottom: 40px;
-        padding-right: 50px;
-        padding-bottom: 60px;
-        padding-left: 50px;
+        padding-bottom: 20px;
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        text-align: left;
+}
+
+.tarea__container {
+    height: fit-content;
+        max-width: 600px;
+        margin: auto;
+        padding: 30px 20px 30px;
+        border-style: solid none none;
+        border-width: 1px 1px 1px 0;
+        border-color: #fff #000 #000 #2e2e2e;
+        color: #fff;
+        line-height: 1.4rem;
+        font-weight: 400;
+        strong{
+            font-size: 1.4rem;
+        } 
+}
+
+.tarea__timer {
+    max-width: 500px;
+        margin: auto;
+    text-align: left;
+    font-size: 1.4rem;
+    color: #f6905c;
+}
+
+.button__up {
+        height: 52px;
+        width: 52px;
 }

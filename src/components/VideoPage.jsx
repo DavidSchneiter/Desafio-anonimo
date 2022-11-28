@@ -19,27 +19,30 @@ const VideoPage = ({ db }) => {
           <div className='text__container'>
             <h1>Transcripción</h1>
             <div className='transcripcion__container' >
-            {string.map((a) => {
+            {string.map((text) => {
               return(
-              <p key={a}>
-                  {a}
+              <p key={text}>
+                  {text}
                   <br />
               </p>)
             } ) }
           </div>
           <div className='tareas__container'>
             <h1>Tareas</h1>
-            <p>Escenario: {db.escenario}</p>
+            <p className='escenario'>Escenario: {db.escenario}</p>
             {db.preguntas.map((tarea,i) => {
               return (
-                <div className='tarea__container'>
-                  <p>
+                <div key={tarea.texto} className='tarea__container'>
+                  <p className='tarea__text'>
                     <strong>
-                      Tarea: {i + 1}
+                      Tarea {i + 1}:
                       <br />
                       {tarea.texto}
                     </strong>
                   </p>
+                    <p className='tarea__timer'>
+                      {`Duracion de la tarea: ${tarea.tiempo}`}
+                    </p>
                 </div>
               )
             })}
