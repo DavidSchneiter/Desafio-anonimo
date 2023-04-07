@@ -1,5 +1,4 @@
-import database from './db/db.json'
-import { useEffect, useState } from 'react'
+import database  from './db/db.json'
 import {
   Navigate,
   Route,
@@ -10,13 +9,6 @@ import VideoPage  from './components/VideoPage';
 import { Layout } from './layout/LayoutPage';
 
 function App() {
-  // const [database, setDatabase] = useState([])
-  // useEffect(() => {
-  //   fetch("../src/db/db.json")
-  //   .then((res) => res.json())
-  //   .then((data) => setDatabase(data));
-  // }, [])
-    // console.log(database);
   return (
       <Layout>
 
